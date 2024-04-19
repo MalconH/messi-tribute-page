@@ -1,0 +1,19 @@
+.top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  color: var(--black);
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 0 #00000050;
+  z-index: 1;
+}
+
+.top svg {
+  stroke: currentColor;
+}

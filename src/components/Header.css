@@ -1,0 +1,34 @@
+.header {
+  background-color: var(--white);
+  color: var(--darkblue);
+  width: 100%;
+  min-height: 3rem;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  box-shadow: 0 3px 10px 0 #01335333;
+}
+
+.header-title {
+  display: block;
+  font-family: "Montserrat Alternates";
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: ease 0.5s all;
+}
+
+.header-title:hover {
+  letter-spacing: 5px;
+  color: var(--lightblue);
+}

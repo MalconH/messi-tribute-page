@@ -1,0 +1,46 @@
+html,
+html::after,
+html::before {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+:root {
+  --yellow: #f2d602;
+  --lightblue: #5fbff9;
+  --white: #f3fcff;
+  --darkblue: #013353;
+  --black: #171b1d;
+
+  --font-title-emphasis: "Monoton";
+  --font-title: "Montserrat Alternates";
+  --font-body: "Source Sans 3";
+
+  --font-size-title: clamp(2rem, 1.6rem + 2vw, 4rem);
+  --font-size-body: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--white);
+}
+
+p {
+  font-size: var(--font-size-body);
+}

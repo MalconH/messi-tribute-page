@@ -1,0 +1,53 @@
+.club {
+  list-style: none;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.club:not(:last-of-type)::before {
+  content: "";
+  background-color: var(--darkblue);
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 1rem;
+  left: calc(1.5rem - 2px / 2);
+  width: 2px;
+  height: 100%;
+}
+.club-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.club-info .crest {
+  width: 3rem;
+  height: 3rem;
+  order: -1;
+  object-fit: contain;
+  filter: drop-shadow(0px 5px 2px #00000050);
+}
+
+.club-info .name {
+  background-color: var(--white);
+  color: var(--darkblue);
+  display: block;
+  padding: 0rem 1rem;
+  font-family: var(--font-title);
+  font-size: 1.5em;
+
+  transform: skewX(-10deg);
+}
+.club-info .timespan {
+  font-family: var(--font-body);
+  font-style: italic;
+  padding-left: 1rem;
+  border-left: solid 2px var(--darkblue);
+}
+
+.club .description {
+  margin-left: 4rem;
+}
+.club .photo {
+  margin-left: 3rem;
+}
