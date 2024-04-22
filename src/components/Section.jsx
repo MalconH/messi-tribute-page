@@ -4,7 +4,7 @@ export function Section({ title, sectionId, icon, children, fullBleed = false })
   const punctuactionMarks = /[,.¡!¿?_`´'"]/g;
   const titleId = title.toLowerCase().replace(punctuactionMarks, "").replaceAll(" ", "-");
   const content = (
-    <section className="section" id={`#${sectionId}`} aria-labelledby={titleId}>
+    <section className="section" id={`${sectionId}`} aria-labelledby={titleId}>
       <h2 className="title" id={titleId}>
         {title}
       </h2>

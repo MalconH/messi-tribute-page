@@ -7,6 +7,7 @@ import { Gallery } from "./components/Gallery.jsx";
 import { Trophies } from "./components/Trophies.jsx";
 import { ArgentinaFlag, Ball, Trophy as TrophyIcon } from "./components/Icons.jsx";
 import { Footer } from "./components/Footer.jsx";
+import { Hero } from "./components/Hero.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <main>
         <Top /> {/*TODO: hide when scroll up to the top */}
+        <Hero />
         <Section sectionId="biografia" title="De Rosario, al mundo" icon={<ArgentinaFlag />}>
           <p>
             Lionel Andrés Messi Cuccittini, conocido en todo el mundo como simplemente "Leo", nació
