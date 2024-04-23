@@ -2,30 +2,31 @@
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  padding-top: 2.75rem;
 
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
   border-bottom: solid 0.25rem var(--yellow);
 }
 
 .text-wrapper {
   display: block;
-  width: 30rem;
-  max-width: 70%;
   text-align: center;
+  align-self: start;
 
-  position: absolute;
-  top: 3.75rem;
-  left: 1rem;
+  flex: 1 20rem;
 }
 
 .hero-title {
+  display: inline-block;
+  max-width: min-content;
+  text-align: center;
   font-family: var(--font-title);
   color: var(--darkblue);
   font-weight: 800;
   line-height: 1;
-  font-size: 8rem;
+  font-size: clamp(3rem, 9.5vw + 1.1rem, 12.5rem);
 }
 
 .hero-subtitle {
@@ -34,7 +35,6 @@
   font-weight: 600;
   font-size: 1.5rem;
   text-wrap: balance;
-  background-color: #ffffffb9;
   padding: 0.5rem;
 }
 .hero-img {
@@ -44,7 +44,7 @@
   height: auto;
 
   object-fit: contain;
-  flex: 1;
+  flex: 1 30rem;
   max-width: 35rem;
   width: 15rem;
 }

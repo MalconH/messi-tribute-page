@@ -17,7 +17,9 @@
 }
 .club-info {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
   gap: 1rem;
 }
 .club-info .crest {
@@ -31,7 +33,7 @@
 .club-info .name {
   background-color: var(--white);
   color: var(--darkblue);
-  display: block;
+  display: inline;
   padding: 0rem 1rem;
   font-family: var(--font-title);
   font-size: 1.5em;
@@ -43,6 +45,7 @@
   font-style: italic;
   padding-left: 1rem;
   border-left: solid 2px var(--darkblue);
+  flex: 1 100%;
 }
 
 .club .description {
@@ -50,4 +53,17 @@
 }
 .club .photo {
   margin-left: 3rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .club-info .timespan {
+    flex: none;
+  }
+}
+
+@media screen and (min-width: 25rem) {
+  .club-info {
+    flex-direction: row;
+    align-items: center;
+  }
 }
